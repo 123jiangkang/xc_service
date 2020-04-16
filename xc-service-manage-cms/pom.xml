@@ -62,5 +62,33 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <configuration>
+                    <!-- 定义镜像名 -->
+                    <imageName>118.190.2.114:5000/${project.artifactId}:${project.version}</imageName>
+                    <!-- 基础镜像，编译为镜像时会下载jdk-->
+                    <baseImage>java</baseImage>
+                    <workdir>/</workdir>
+                    <cmd>["java", "-version"]</cmd>
+                    <!-- 相当于 java -jar  jenkins.jar-->
+                    <entryPoint>["java", "-jar", "${project.build.finalName}.jar"]</entryPoint>
 
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                    <!-- 远程docker地址 没有配置docker远程访问的需要配置一下 -->
+                    <dockerHost>http://118.190.2.114:2375</dockerHost>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
