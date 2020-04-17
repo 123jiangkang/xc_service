@@ -70,7 +70,7 @@
                 <version>1.0.0</version>
                 <configuration>
                     <!-- 定义镜像名 -->
-                    <imageName>118.190.2.114:5000/${project.artifactId}:${project.version}</imageName>
+                    <imageName>${project.artifactId}:${project.version}</imageName>
                     <!-- 基础镜像，编译为镜像时会下载jdk-->
                     <baseImage>java</baseImage>
                     <workdir>/</workdir>
@@ -86,7 +86,7 @@
                         </resource>
                     </resources>
                     <!-- 远程docker地址 没有配置docker远程访问的需要配置一下 -->
-                    <dockerHost>http://118.190.2.114:2375</dockerHost>
+                    <dockerHost>http://118.190.2.114:2374</dockerHost>
                 </configuration>
             </plugin>
         </plugins>

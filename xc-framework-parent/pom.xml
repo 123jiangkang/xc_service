@@ -160,15 +160,6 @@
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
-           <!-- &lt;!&ndash; 资源文件拷贝插件 &ndash;&gt;
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>-->
-            <!-- java编译插件 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -178,17 +169,6 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
         </plugins>
     </build>
-    <distributionManagement>
-        <repository>
-            <id>nexus-releases</id>
-            <name>releases</name>
-            <url>http://127.0.0.1:8081/nexus/content/repositories/releases/</url>
-        </repository>
-    </distributionManagement>
 </project>
