@@ -1,0 +1,15 @@
+FROM java
+
+RUN echo " start build eureka_server ..."
+
+MAINTAINER jiangkang
+
+WORKDIR /
+
+CMD ["java","version"]
+
+COPY eureka_server/target/eureka_server.jar main.jar
+
+ENTRYPOINT ["java", "-jar", "main.jar"]
+
+RUN echo " build eureka_server end ..."
