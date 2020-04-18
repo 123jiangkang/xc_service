@@ -1,0 +1,12 @@
+/Users/apple/IdeaProjects/xc_service/xc-framework-common/src/main/java/com/xuecheng/framework/model/response/ResponseResult.java
+/Users/apple/IdeaProjects/xc_service/xc-framework-common/src/main/java/com/xuecheng/framework/exception/ExceptionCatch.java
+/Users/apple/IdeaProjects/xc_service/xc-framework-common/src/main/java/com/xuecheng/framework/model/response/CommonCode.java
+/Users/apple/IdeaProjects/xc_service/xc-framework-common/src/main/java/com/xuecheng/framework/CommonApplication.java
+/Users/apple/IdeaProjects/xc_service/xc-framework-common/src/main/java/com/xuecheng/framework/web/BaseController.java
+/Users/apple/IdeaProjects/xc_service/xc-framework-common/src/main/java/com/xuecheng/framework/client/XcServiceList.java
+/Users/apple/IdeaProjects/xc_service/xc-framework-common/src/main/java/com/xuecheng/framework/model/response/QueryResult.java
+/Users/apple/IdeaProjects/xc_service/xc-framework-common/src/main/java/com/xuecheng/framework/model/response/Response.java
+/Users/apple/IdeaProjects/xc_service/xc-framework-common/src/main/java/com/xuecheng/framework/model/request/RequestData.java
+/Users/apple/IdeaProjects/xc_service/xc-framework-common/src/main/java/com/xuecheng/framework/model/response/QueryResponseResult.java
+/Users/apple/IdeaProjects/xc_service/xc-framework-common/src/main/java/com/xuecheng/framework/model/response/ResultCode.java
+/Users/apple/IdeaProjects/xc_service/xc-framework-common/src/main/java/com/xuecheng/framework/exception/CustomException.java
