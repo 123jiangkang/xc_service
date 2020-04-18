@@ -6,3 +6,13 @@ spring:
   data:
     mongodb:
       uri: mongodb://jk:jk@118.190.2.114:27017/xc_page
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://118.190.2.114:50101/eureka/
+    instance:
+      prefer‐ip‐address: true #将自己的ip地址注册到Eureka服务中
+      ip‐address: 118.190.2.114
+      instance‐id: ${spring.application.name}:${server.port}
